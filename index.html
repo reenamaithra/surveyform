@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+   <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <div class="container">
+       <form action="./result.html" method="get">
+        <label  for="firstname" class="name"> NAME </label> 
+    </div>
+       
+    
+    <div>
+        <input class="fname" id="firstname" type="text" placeholder="first name" required>
+        <label  for="lastname"> </label> <input class="lname" id="lastname" type="text" placeholder="last name" required>
+      
+    </div>
+    <div>
+        <label for="email" class="name">EMAIL</label>
+    </div>
+    <div>
+        <input type="email" id="email" name="email" placeholder="email" required>
+    </div>
+  <div class="container">
+      <label class="name">  YOUR EXPERIENCE</label>
+      <div class="rating-css">
+        <input type="radio" name="rating" id="star-1">
+        <label for="star-1" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="star-2">
+        <label for="star-2" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="star-3">
+        <label for="star-3" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="star-4">
+        <label for="star-4" class="fa fa-star"></label>
+        <input type="radio" name="rating" id="star-5">
+        <label for="star-5" class="fa fa-star"></label>
+      </div>
+      
+  </div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <p class="name">How Satisfied are you with </p>
+    <table cellpadding="15" cellspacing="5">
+        <tr>
+            <td></td>
+            <td>VeryUnsatisfied</td>
+            <td>Unsatisfied</td>                                                                                                                                                                                                                 
+            <td>Neutral</td>
+            <td>Satisfied</td>
+            <td>Very Satisfied</td>
+        </tr>
+        <tr class="color">
+           <td>Purchase</td>
+           <td><input type="radio" name="Surveyform1" id="VeryUnsatisfied"></td> 
+           <td><input type="radio" name="Surveyform1" id="Unsatisfied"></td>
+           <td><input type="radio" name="Surveyform1" id="Neutral"></td>
+           <td><input type="radio" name="Surveyform1" id="Satisfied"></td>
+           <td><input type="radio" name="Surveyform1" id="Verysatisfied"></td>
+        </tr>
+        <tr class="currentColor">
+            <td >Service</td>
+            <td><input type="radio" name="Surveyform2" id="VeryUnsatisfied"></td> 
+            <td><input type="radio" name="Surveyform2" id="Unsatisfied"></td>
+            <td><input type="radio" name="Surveyform2" id="Neutral"></td>
+            <td><input type="radio" name="Surveyform2" id="Satisfied"></td>
+            <td><input type="radio" name="Surveyform2" id="Verysatisfied"></td>
+         </tr>
+        </tr>
+        <tr class="color" >
+            <td >company Overall</td>
+            <td><input type="radio" name="Surveyform3" id="VeryUnsatisfied"></td> 
+            <td><input type="radio" name="Surveyform3" id="Unsatisfied"></td>
+            <td><input type="radio" name="Surveyform3" id="Neutral"></td>
+            <td><input type="radio" name="Surveyform3" id="Satisfied"></td>
+            <td><input type="radio" name="Surveyform3" id="Verysatisfied"></td>
+         </tr>
+        </tr>
+
+    </table>
+</div>
+<div>
+    <p class="name">How likely are you to </p>
+    <table cellpadding="15" cellspacing="5">
+        <tr>
+            <td></td>
+            <td>Very Unlikely</td>
+            <td>Unlikely</td>
+            <td>Neutral</td>
+            <td>Very likely</td>
+            <td>likely</td>
+        </tr>
+        <tr class="color">
+           <td>Buy from as again</td>
+           <td><input type="radio" name="like1" id="VeryUnlikely"></td> 
+           <td><input type="radio" name="like1" id="Unlikely"></td>
+           <td><input type="radio" name="like1" id="Neutral"></td>
+           <td><input type="radio" name="like1" id="Likely"></td>
+           <td><input type="radio" name="like1" id="Verylikely"></td>
+        </tr>
+        <tr class="currentColor">
+            <td >Recommand our <br>
+                product to others</td>
+            <td><input type="radio" name="like2" id="VeryUnlikely"></td> 
+            <td><input type="radio" name="like2" id="Unlikely"></td>
+            <td><input type="radio" name="like2" id="Neutral"></td>
+            <td><input type="radio" name="like2" id="Likely"></td>
+            <td><input type="radio" name="like2" id="Verylikely"></td>
+         </tr>
+        </tr>
+        <tr class="color" >
+            <td >Recommand our <br>
+                company to others</td>
+            <td><input type="radio" name="like3" id="VeryUnlikely"></td> 
+            <td><input type="radio" name="like3" id="Unlikely"></td>
+            <td><input type="radio" name="like3" id="Neutral"></td>
+            <td><input type="radio" name="like3" id="Likely"></td>
+            <td><input type="radio" name="like3" id="Verylikely"></td>
+         </tr>
+        </tr>
+
+    </table>
+</div>
+<br>
+<br>
+<div>
+    
+    <label class="name" for="suggestions">Additional comments or suggestions</label>
+    <br>
+    <br>
+    <textarea name="commants" id="suggestions" cols="160px" rows="10"></textarea>
+</div>
+<br><br>
+<div>
+    <input  type="submit" name="submit" id="submit">
+</div>
+
+      
+
+
+</form>
+
+</body>
+</html>

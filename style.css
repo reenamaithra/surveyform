@@ -1,0 +1,67 @@
+.name {
+    font-size: 30px;
+}
+input[type=text] {
+    width: 30%;
+    padding: 20px 10px;
+   margin-right: 10px;
+    box-sizing: border-box;
+    border-color: red;
+}
+input[type=email] {
+    width: 50%;
+    padding: 20px 10px;
+   
+    box-sizing: border-box;
+    border-color: red;
+}
+.rating-css {
+    padding: 0;
+    margin: 0;
+}
+.rating-css input {
+    display: none;
+}
+.rating-css label {
+    display: inline-block;
+    width: 50PX;
+    position: relative;
+    cursor: pointer;
+}
+.rating-css label::before {
+content: "\2605";
+position: absolute;
+font-size: 50px;
+display: inline-block;
+top: 0;
+left: 0;
+color: gray;
+}
+.rating-css label::after{
+    content: "\2605";
+    position: absolute;
+    font-size: 50px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color: yellow;
+    opacity: 0;
+    }
+.rating-css label:hover::after,
+    .rating-css label:hover ~ label::after,
+    .rating-css input:checked ~ label::after {
+        opacity: 1;
+    }
+   table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   }
+   td, th {
+    border: 0px solid;
+    padding: 8px;
+   }
+   tr:nth-child(even) {
+    background-color: #dddddd;
+   }
+
